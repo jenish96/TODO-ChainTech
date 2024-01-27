@@ -22,4 +22,49 @@ Before you begin, ensure you have the following installed on your machine:
    
 3. Update the MongoDB connection string in config.js
 
+## Start Sever
+Use following command
+```bash
+nodemon
+```
 
+### Todo - Schema
+<pre>
+<b>title</b>       - Title of task                                                                          // Required
+<b>description</b> - Description about Task                                                                 // Required
+<b>completed</b>   - Task is comeleted or not - true/false  - default = false 
+<b>category</b>    - Category of Task - Work , Personal , Collage , Health , Finance , Other.               // Required
+<b>due_date</b>    - Due Date of Task                                                                       // Required
+</pre> 
+   
+## APIs
+
+* Create - create a task
+  ```bash
+  http://localhost:5000/api/v1/todos/new
+  ```
+
+* List - Get all tasks
+  ```bash
+  http://localhost:5000/api/v1/todos/all
+  ```
+
+* Categorize - Get tasks category wise
+  ```bash
+  http://localhost:5000/api/v1/todos/category
+  ```
+
+* Mark Task as Complete
+  ```bash
+  http://localhost:5000/api/v1/todos/complete/:id
+  ```
+  
+* Update - update a Task
+  ```bash
+  http://localhost:5000/api/v1/todos/:id
+  ```
+
+* Delete - delete a Task
+  ```bash
+  http://localhost:5000/api/v1/todos/:id
+  ```
