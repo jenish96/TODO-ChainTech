@@ -68,3 +68,7 @@ nodemon
   ```bash
   http://localhost:5000/api/v1/todos/:id
   ```
+
+## Deploy on Vercel
+
+### [Todo - ChainTech ](https://todo-chain-tech.vercel.app/)
