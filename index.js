@@ -8,7 +8,7 @@ app.use(express.json())
 app.use("/api/v1/todos", todoRoute)
 
 app.get("/", async (req, res) => {
-    res.send("Working...")
+    res.send("Welcome to Todo - ChainTech")
 })
 
 app.listen("5000", () => {
